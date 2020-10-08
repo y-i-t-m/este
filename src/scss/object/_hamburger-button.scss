@@ -1,0 +1,78 @@
+// <button id="js-hamburger-button" class="hamburger-button _d-block _d-ml-none" aria-controls="" type="button"
+//                         aria-expanded="false" aria-label="open">
+//             <span class="hamburger-button__inner">
+//               <span class="hamburger-button__line"></span>
+//               <span class="hamburger-button__line"></span>
+//               <span class="hamburger-button__line"></span>
+//             </span>
+// </button>
+
+.hamburger-button {
+  width: rem(64);
+  height: rem(64);
+  // position: absolute;
+  // top: 0;
+  // left: 100%;
+  transform: translate(-100%, 0);
+  // transition: all 0.3s ease-in-out;
+  z-index: z-index(ham-btn);
+  background-color: transparent;
+
+  // &.-fix {
+  //   position: fixed;
+  // }
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+    // transition: all 0.3s ease-in-out;
+  }
+
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(24);
+    height: 2px;
+    background-color: color(white);
+    transition: inherit;
+
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+      transition: inherit;
+    }
+
+    &:before {
+      top: rem(-10);
+    }
+
+    &:after {
+      top: rem(10);
+    }
+  }
+
+  &[aria-expanded="true"] .hamburger-button__line {
+    background-color: transparent;
+
+    &:before,
+    &:after {
+      top: 0;
+      background-color: color(white);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+}
