@@ -16,6 +16,7 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
     "eslint": "^6.6.0",
     "eslint-loader": "^3.0.2",
     "file-loader": "^4.2.0",
@@ -31,6 +32,7 @@
     "sass-loader": "^8.0.0",
     "source-map": "^0.7.3",
     "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^4.2.3",
     "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-bundle-analyzer": "^3.6.0",
@@ -50,5 +52,17 @@
   "browserslist": [
     "last 2 version",
     "ie >= 11"
-  ]
+  ],
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://y-i-t-m@github.com/y-i-t-m/este.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/y-i-t-m/este/issues"
+  },
+  "homepage": "https://github.com/y-i-t-m/este#readme",
+  "description": ""
 }

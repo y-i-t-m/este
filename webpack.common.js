@@ -74,8 +74,8 @@ module.exports = ({
       minify: htmlMinifyOption
     }),
     new HtmlWebpackPlugin({
-      template: './src/other.html',
-      filename: 'other.html',
+      template: './src/about/index.html',
+      filename: './about/index.html',
       inject: 'body',
       chunks: ['main'],
       minify: htmlMinifyOption
